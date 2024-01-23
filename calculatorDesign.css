@@ -1,0 +1,273 @@
+.mybackground{
+    background-image:-webkit-linear-gradient(left, #6900FF,#205fb2,#a1d2ff);
+    margin: 0;
+}
+.header{
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+
+.header a.logo{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 1px;
+    margin-left: 50px;
+}
+
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.hometitle{
+    display:flex;
+}
+
+.hometitle p{
+    color: white;
+    margin: 0;
+    margin-left: 40px;
+    margin-top: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    letter-spacing: 20px;
+}
+.scoringboard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scoringboard div.middle{
+    display: flex;
+    justify-content: center;
+}
+
+.scoringboard p{
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.scoringboard p.score_text{
+    font-size: 30px;
+    color: white;
+}
+.scoringboard p.score_num{
+    font-size: 80px;
+    color: rgb(201, 240, 61);
+}
+
+.redbox{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.redbox button{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-style: none;
+    font-size: 20px;
+}
+
+.redbox button:hover{
+    background-color: green;
+    color: white;
+}
+
+.redbox p{
+    margin: 0;
+    text-decoration-line: underline;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 40px; 
+}
+.goal{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.goal div.goalone{
+    background-color: rgb(219, 219, 219);
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.goal div.goaltwo{
+    background-color: rgb(219, 219, 219);
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.goal div.goalthree{
+    background-color: rgb(219, 219, 219);
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.boxcount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.boxcount button{
+    border-radius: 100%;
+    border-style: solid;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    font-size: 30px;
+}
+.boxcount button:hover{
+    background-color: green;
+    color: white;
+}
+
+.boxcount p{
+    font-size: 50px;
+    margin: 0;
+}
+
+.goallevel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.goallevel button{
+    border-style: none;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    width: 100%;
+    height: 50px;
+}
+
+.goallevel button.uniform{
+    background-color: green;
+    color: white;
+}
+
+
+.uniformgoal{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.uniformgoal button{
+    border-radius: 10%;
+    width: 150px;
+    height: 30px;
+}
+
+.heightbonus{
+    display: flex;
+    justify-content: center;
+}
+
+.heightbonus div.text{
+    display: flex;
+    align-items: center;
+}
+
+.heightbonus div.text p{
+    margin: 10;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 40px;
+    color: white;
+}
+
+.heightbonus div.button{
+    display: flex;
+    justify-content: center;
+}
+
+.heightbonus div.button button{
+    border-radius: 10%;
+    width: 200px;
+    height: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+
+.parking{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.parking div.class{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.parking div.class div.playerparking{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.parking div.class div.reset{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.reset button{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: darkred;
+    color: white;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-color: red;
+}
+
+
+.playerparking p{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: black;
+    background-color: white;
+    margin: 0 ;
+}
+
+.playerparking button{
+    width: 100%;
+    height: 35px;
+    margin: 0;
+    border-style: none;
+    font-size: 15px;
+}
+
+.playerparking button.park1{
+    background-color: green;
+    color: white;
+}
+
+.playerparking button.park2{
+    background-color: green;
+    color:  white;
+}
