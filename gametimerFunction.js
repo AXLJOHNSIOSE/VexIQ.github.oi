@@ -1,3 +1,3 @@
 function homepage(){
-    window.location.assign("roboticScoring.html");
+    window.location.assign("index.html");
 }
