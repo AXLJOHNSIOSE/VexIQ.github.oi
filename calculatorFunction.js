@@ -18,7 +18,7 @@ let active_park = 0;
 
 
 function homepage(){
-    window.location.assign("roboticScoring.html");
+    window.location.assign("index.html");
 }
 
 function REDBOX_MINUS(){
