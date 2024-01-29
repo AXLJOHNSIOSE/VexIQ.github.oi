@@ -30,136 +30,27 @@
                 </div>
             </div>
         </div>
-
-        <div class="redbox">
-            <p id="labelRedblocks">
-                Red Blocks
-            </p>
-            <!-- this code is for the red box counting
-                 the maximum red is up to 3 box
-                 and change the value of total score
-                 per 1 red box score 5 points-->
-            <button onclick="REDBOX_MINUS()">
-                -
-            </button>
-            <p id="REDBOX_COUNT">
-                0
-            </p>
-            <button onclick="REDBOX_ADD()">
-                +
-            </button>
-        </div>
-
-        <div class="goal">
-
-            <div class="goalone">
-                <div class = "labelgoal1">
-                    <p>
-                        GOAL 1
+        <div class="content">
+            <div class="FirstColumn">
+                <div class="redbox">
+                    <p id="labelRedblocks">
+                        Red Blocks
                     </p>
-                </div>
-                <div class="boxcount">
-                    <button onclick="GOAL_ONE_MINUS()">
+                    <!-- this code is for the red box counting
+                         the maximum red is up to 3 box
+                         and change the value of total score
+                         per 1 red box score 5 points-->
+                    <button onclick="REDBOX_MINUS()">
                         -
                     </button>
-                    <p id ="GOAL_ONE_POINT">
+                    <p class="Scoretext" id="REDBOX_COUNT">
                         0
                     </p>
-                    <button onclick = "GOAL_ONE_ADD()">
+                    <button onclick="REDBOX_ADD()">
                         +
                     </button>
                 </div>
-                <div class="goallevel">
-                    <button onclick="GOAL_ONE_LEVEL_0()" id="GOAL1_LEVEL_ZERO" class = 'uniform'>0</button>
-                    <button onclick="GOAL_ONE_LEVEL_1()" id="GOAL1_LEVEL_ONE">1</button>
-                    <button onclick="GOAL_ONE_LEVEL_2()" id="GOAL1_LEVEL_TWO">2</button>
-                    <button onclick="GOAL_ONE_LEVEL_3()" id="GOAL1_LEVEL_THREE">3</button>
-                </div>
-                <div class="uniformgoal">
-                    <button  onclick="GOAL_ONE_UNIFORM()" id="GOAL1_UNIFORM">Uniform Goal</button>
-                </div>
-            </div>
 
-            <div class="goaltwo">
-                <div class = "labelgoal1">
-                    <p>
-                        GOAL 2
-                    </p>
-                </div>
-                <div class="boxcount">
-                    <button onclick="GOAL_TWO_MINUS()">
-                        -
-                    </button>
-                    <p id ="GOAL_TWO_POINT">
-                        0
-                    </p>
-                    <button onclick="GOAL_TWO_ADD()">
-                        +
-                    </button>
-                </div>
-                <div class="goallevel">
-                    <button onclick="GOAL_TWO_LEVEL_0()" id="GOAL2_LEVEL_ZERO" class = 'uniform'>0</button>
-                    <button onclick="GOAL_TWO_LEVEL_1()" id="GOAL2_LEVEL_ONE">1</button>
-                    <button onclick="GOAL_TWO_LEVEL_2()" id="GOAL2_LEVEL_TWO">2</button>
-                    <button onclick="GOAL_TWO_LEVEL_3()" id="GOAL2_LEVEL_THREE">3</button>
-                </div>
-                <div class="uniformgoal">
-                    <button onclick="GOAL_TWO_UNIFORM()" id="GOAL2_UNIFORM">Uniform Goal</button>
-                </div>
-            </div>
-
-            <div class="goalthree">
-                <div class = "labelgoal1">
-                    <p>
-                        GOAL 3
-                    </p>
-                </div>
-                <div class="boxcount">
-                    <button onclick="GOAL_THREE_MINUS()">
-                        -
-                    </button>
-                    <p id ="GOAL_THREE_POINT">
-                        0
-                    </p>
-                    <button onclick="GOAL_THREE_ADD()">
-                        +
-                    </button>
-                </div>
-                <div class="goallevel">
-                    <button onclick="GOAL_THREE_LEVEL_0()" id="GOAL3_LEVEL_ZERO" class = 'uniform'>0</button>
-                    <button onclick="GOAL_THREE_LEVEL_1()" id="GOAL3_LEVEL_ONE">1</button>
-                    <button onclick="GOAL_THREE_LEVEL_2()" id="GOAL3_LEVEL_TWO">2</button>
-                    <button onclick="GOAL_THREE_LEVEL_3()" id="GOAL3_LEVEL_THREE">3</button>
-                </div>
-                <div class="uniformgoal">
-                    <button  onclick="GOAL_THREE_UNIFORM()" id="GOAL3_UNIFORM">Uniform Goal</button>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="heightbonus">
-            <div>
-                <div class="text"> 
-                    <p>
-                        Height Bonus:
-                    </p>
-                    <p  id ="HEIGHT_LEVEL">
-                        0
-                    </p>
-                </div>
-    
-                <div class="button">
-                    <button onclick="SUPPLY_ZONE()" id="SUPPLYZONEBUTTON">
-                        Supply Zone Cleared
-                    </button>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="parking">
-            <div class="class">
                 <div class="playerparking">
                     <button onclick="NOT_PARKED1()" id = "PARKED1" class="park1">
                         Not Parked
@@ -174,13 +65,7 @@
                         Robot 1
                     </p>
                 </div>
-
-                <div class="reset">
-                    <button onclick="RESET()">
-                        Reset
-                    </button>
-                </div>
-
+    
                 <div class="playerparking">
                     <button onclick="NOT_PARKED2()" id = "PARKED2" class="park2">
                         Not Parked
@@ -194,6 +79,124 @@
                     <p>
                         Robot 2
                     </p>
+                </div>
+                <div class="supplyzone">
+                    <button onclick="SUPPLY_ZONE()" id="SUPPLYZONEBUTTON">
+                        Supply Zone Cleared
+                    </button>
+                </div>
+                <div class="reset">
+                    <button onclick="RESET()">
+                        Reset
+                    </button>
+                </div>
+            </div>
+
+            <div class="SecondColumn">
+                <div class="headerrow">
+                    <div class="heightbonus">
+                        <div>
+                            <div class="text"> 
+                                <p>
+                                    Height Bonus:
+                                </p>
+                                <p  id ="HEIGHT_LEVEL">
+                                    0
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "firstrow">
+                    <div class="content1">
+                        <div class="goalone">
+                            <div class = "labelgoal1">
+                                <p>
+                                    GOAL 1
+                                </p>
+                            </div>
+                            <div class="boxcount">
+                                <button onclick="GOAL_ONE_MINUS()">
+                                    -
+                                </button>
+                                <p id ="GOAL_ONE_POINT">
+                                    0
+                                </p>
+                                <button onclick = "GOAL_ONE_ADD()">
+                                    +
+                                </button>
+                            </div>
+                            <div class="goallevel">
+                                <button onclick="GOAL_ONE_LEVEL_0()" id="GOAL1_LEVEL_ZERO" class = 'uniform'>0</button>
+                                <button onclick="GOAL_ONE_LEVEL_1()" id="GOAL1_LEVEL_ONE">1</button>
+                                <button onclick="GOAL_ONE_LEVEL_2()" id="GOAL1_LEVEL_TWO">2</button>
+                                <button onclick="GOAL_ONE_LEVEL_3()" id="GOAL1_LEVEL_THREE">3</button>
+                            </div>
+                            <div class="uniformgoal">
+                                <button  onclick="GOAL_ONE_UNIFORM()" id="GOAL1_UNIFORM">Uniform Goal</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content2">
+                        <div class="goaltwo">
+                            <div class = "labelgoal1">
+                                <p>
+                                    GOAL 2
+                                </p>
+                            </div>
+                            <div class="boxcount">
+                                <button onclick="GOAL_TWO_MINUS()">
+                                    -
+                                </button>
+                                <p id ="GOAL_TWO_POINT">
+                                    0
+                                </p>
+                                <button onclick="GOAL_TWO_ADD()">
+                                    +
+                                </button>
+                            </div>
+                            <div class="goallevel">
+                                <button onclick="GOAL_TWO_LEVEL_0()" id="GOAL2_LEVEL_ZERO" class = 'uniform'>0</button>
+                                <button onclick="GOAL_TWO_LEVEL_1()" id="GOAL2_LEVEL_ONE">1</button>
+                                <button onclick="GOAL_TWO_LEVEL_2()" id="GOAL2_LEVEL_TWO">2</button>
+                                <button onclick="GOAL_TWO_LEVEL_3()" id="GOAL2_LEVEL_THREE">3</button>
+                            </div>
+                            <div class="uniformgoal">
+                                <button onclick="GOAL_TWO_UNIFORM()" id="GOAL2_UNIFORM">Uniform Goal</button>
+                            </div>
+                        </div>  
+                    </div>
+                </div> 
+                <div class="secondrow">
+                    <div class="content3">
+                        <div class="goalthree">
+                            <div class = "labelgoal1">
+                                <p>
+                                    GOAL 3
+                                </p>
+                            </div>
+                            <div class="boxcount">
+                                <button onclick="GOAL_THREE_MINUS()">
+                                    -
+                                </button>
+                                <p id ="GOAL_THREE_POINT">
+                                    0
+                                </p>
+                                <button onclick="GOAL_THREE_ADD()">
+                                    +
+                                </button>
+                            </div>
+                            <div class="goallevel">
+                                <button onclick="GOAL_THREE_LEVEL_0()" id="GOAL3_LEVEL_ZERO" class = 'uniform'>0</button>
+                                <button onclick="GOAL_THREE_LEVEL_1()" id="GOAL3_LEVEL_ONE">1</button>
+                                <button onclick="GOAL_THREE_LEVEL_2()" id="GOAL3_LEVEL_TWO">2</button>
+                                <button onclick="GOAL_THREE_LEVEL_3()" id="GOAL3_LEVEL_THREE">3</button>
+                            </div>
+                            <div class="uniformgoal">
+                                <button  onclick="GOAL_THREE_UNIFORM()" id="GOAL3_UNIFORM">Uniform Goal</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
